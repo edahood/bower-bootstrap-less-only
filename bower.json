@@ -5,6 +5,7 @@
   "authors": [
     "Eliot Dahood <eliot@knetik.com>"
   ],
+  "main": "build/less/bootstrap.less",
   "description": "Twitter Bootstrap with only less and fonts for bower.",
   "keywords": [
     "bootstrap"
