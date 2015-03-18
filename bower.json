@@ -1,0 +1,25 @@
+{
+  "name": "bower-bootstrap-less-only",
+  "version": "3.3.4",
+  "homepage": "https://github.com/edahood/bower-bootstrap-less-only",
+  "authors": [
+    "Eliot Dahood <eliot@knetik.com>"
+  ],
+  "description": "Twitter Bootstrap with only less and fonts for bower.",
+  "keywords": [
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edahood/bower-bootstrap-less-only.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "bower-bootstrap-less-only",
+  "version": "3.3.4",
+  "description": "Twitter Bootstrap with only less and fonts for bower.",
+  "main": "grunt",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edahood/bower-bootstrap-less-only.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "less"
+  ],
+  "author": "Eliot <eliot@knetik.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edahood/bower-bootstrap-less-only/issues"
+  },
+  "homepage": "https://github.com/edahood/bower-bootstrap-less-only",
+  "devDependencies": {
+    "bootstrap": "^3.3.4",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "~0.8",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-dev-update": "~1.1.0",
+    "grunt-less-imports": "^1.1.0",
+    "grunt-open": "^0.2.3",
+    "jit-grunt": "^0.9.1",
+    "load-grunt-tasks": "~3.1.0",
+    "grunt-bump": "~0.3.0"
+  }
+}
