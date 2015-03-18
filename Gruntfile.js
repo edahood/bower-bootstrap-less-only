@@ -47,6 +47,30 @@ module.exports = function (grunt) {
           regExp: false
         }
     },
+    less: {
+      compileCore: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'bootstrap.css.map',
+          sourceMapFilename: 'build/css/bootstrap.css.map'
+        },
+        src: 'build/less/bootstrap.less',
+        dest: 'build/css/bootstrap.css'
+      },
+      compileTheme: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'bootstrap-theme.css.map',
+          sourceMapFilename: 'build/css/bootstrap-theme.css.map'
+        },
+        src: 'build/less/theme.less',
+        dest: 'build/css/bootstrap-theme.css'
+      }
+    },
     devUpdate: {
         check: {
             options: {
@@ -90,7 +114,8 @@ module.exports = function (grunt) {
 
     }
   });
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('compile', ['less:compileCore','less:compileTheme']);
+  grunt.registerTask('default', ['build','compile']);
   grunt.registerTask('update', ['devUpdate:main']);
   grunt.registerTask('check', ['devUpdate:check']);
 };
